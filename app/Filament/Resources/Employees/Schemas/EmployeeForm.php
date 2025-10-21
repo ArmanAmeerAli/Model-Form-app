@@ -45,11 +45,11 @@ class EmployeeForm
                     ->label('Salary')
                     ->required()
                     ->numeric() //This enforce the input can only be a numerical value
-                    ->minValue(1000)
+                    ->minValue(100)
                     ->maxValue(99999999.99)
                     ->step(0.01) //input allow upto 2 decimal places
                     ->placeholder('5000.00')
-                    ->helperText('Enter a Salary between 1000.00 and 99999999.99')
+                    ->helperText('Enter a Salary between 100.00 and 99999999.99!')
             ]);
     }
 }
