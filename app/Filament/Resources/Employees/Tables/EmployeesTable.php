@@ -26,6 +26,8 @@ class EmployeesTable
                     ->searchable()
                     ->sortable(),
                 TextColumn::make('phone')
+                    ->label('Phone Number')
+                    ->formatStateUsing(fn ($state, $record) => '+92 ' . $state)
                     ->searchable()
                     ->sortable(),
                 TextColumn::make('position')
